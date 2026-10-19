@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php" colors="false" failOnWarning="true" failOnRisky="true" cacheResult="false">
+  <testsuites>
+    <testsuite name="MacOS">
+      <file>tests/member-macos/MacOsFunctionalTest.php</file>
+    </testsuite>
+    <testsuite name="Linux">
+      <directory suffix="Test.php">tests/member-linux</directory>
+    </testsuite>
+    <testsuite name="WindowsLyu">
+      <file>tests/member-windows-lyu/LyuWindowsTest.php</file>
+    </testsuite>
+  </testsuites>
+  <php><ini name="date.timezone" value="UTC" /></php>
+</phpunit>
